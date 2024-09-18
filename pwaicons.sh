@@ -8,6 +8,15 @@
 image=$1
 color=${2:-'#000000'}
 
+width=$(identify -format "%w" $image)
+height=$(identify -format "%h" $image)
+
+if [ $width -eq $height ]; then
 magick $image -resize 192x192 "192-${image}"
 magick $image -resize 512x512 "512-${image}"
 magick $image -resize 512x512 -background $color -flatten "appicon-${image}"
+else
+magick $image -thumbnail '192x192>' -background transparent -gravity center -extent 192x192 "192-${image}"
+magick $image -thumbnail '512x512>' -background transparent -gravity center -extent 512x512 "512-${image}"
+magick $image -thumbnail '512x512>' -background $color -gravity center -extent 512x512 "appicon-${image}"
+fi
