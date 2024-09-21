@@ -1,7 +1,7 @@
 // Usage Manual
 
-// 1. Require this exact class early in the document, potentially in the <head> element.
-// <script src="https://raw.githubusercontent.com/thspower/freeoss/refs/heads/main/course-sequencer.js" />
+// 1. Require this exact component file early in the document, potentially in the <head> element.
+// <script src="https://cdn.jsdelivr.net/gh/thspower/freeoss/course-sequencer.js"></script>
 
 // 2. Define the sequence which it renders above the web component.
 /*<template id="custom-course">
