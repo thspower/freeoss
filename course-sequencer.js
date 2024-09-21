@@ -1,4 +1,4 @@
-// Usage Notes
+// Usage Manual
 
 // 1. Require this exact class early in the document, potentially in the <head> element.
 // <script src="https://raw.githubusercontent.com/thspower/freeoss/refs/heads/main/course-sequencer.js" />
