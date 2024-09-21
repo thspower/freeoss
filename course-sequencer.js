@@ -1,3 +1,29 @@
+// Usage Notes
+
+// 1. Require this exact class early in the document, potentially in the <head> element.
+// <script src="https://raw.githubusercontent.com/thspower/freeoss/refs/heads/main/course-sequencer.js" />
+
+// 2. Define the sequence which it renders above the web component.
+/*<template id="custom-course">
+  <script id="course" type="application/json">
+    // Replace contents of this array, and remove this comment.
+    [{
+      "title": "This is Sequence Frame 1",
+      "content": "<h1>This is content #1"
+    }, {
+      "title": "This is Sequence Frame 2",
+      "content": "<h1>This is content #2"
+    }]
+  </script>
+</template>*/
+
+// 3. Place the webcomponenet on the page.
+// <cours-e></cours-e>
+
+// **Great Tip**
+// To access the rendered elements, i.e. the <cours-e> shadow DOM,
+// `document.querySelector('cours-e').shadowRoot` contains the document root of the webcomponent
+
 class CourseSequencer extends HTMLElement {
   constructor() {
     super();
