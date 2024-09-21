@@ -8,10 +8,10 @@
   <script id="course" type="application/json">
     // Replace contents of this array, and remove this comment.
     [{
-      "title": "This is Sequence Frame 1",
+      "title": "Frame 1",
       "content": "<h1>This is content #1"
     }, {
-      "title": "This is Sequence Frame 2",
+      "title": "Frame 2",
       "content": "<h1>This is content #2"
     }]
   </script>
